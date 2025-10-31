@@ -190,6 +190,102 @@
             </exclusions>
         </dependency>
 
+
+<!--            &lt;!&ndash; 处理Markdown到Word/PDF转换 &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>org.commonmark</groupId>-->
+<!--                <artifactId>commonmark</artifactId>-->
+<!--                <version>0.21.0</version>-->
+<!--            </dependency>-->
+<!--            &lt;!&ndash; PDF导出 &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>com.itextpdf</groupId>-->
+<!--                <artifactId>itextpdf</artifactId>-->
+<!--                <version>5.5.13.3</version>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>com.itextpdf.tool</groupId>-->
+<!--                <artifactId>xmlworker</artifactId>-->
+<!--                <version>5.5.13.3</version>-->
+<!--            </dependency>-->
+<!--            &lt;!&ndash; Word导出 &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>org.apache.poi</groupId>-->
+<!--                <artifactId>poi</artifactId>-->
+<!--                <version>5.2.3</version>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>org.apache.poi</groupId>-->
+<!--                <artifactId>poi-ooxml</artifactId>-->
+<!--                <version>5.2.3</version>-->
+<!--            </dependency>-->
+
+
+
+        <!-- 22222222222222222222222222222222222222222222222222222222 -->
+        <!-- Markdown -> HTML -->
+        <dependency>
+            <groupId>com.vladsch.flexmark</groupId>
+            <artifactId>flexmark-all</artifactId>
+            <version>0.64.8</version>
+        </dependency>
+
+        <!-- HTML -> PDF -->
+        <dependency>
+            <groupId>com.openhtmltopdf</groupId>
+            <artifactId>openhtmltopdf-pdfbox</artifactId>
+            <version>0.0.1-RC9</version>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.openhtmltopdf</groupId>-->
+<!--            <artifactId>openhtmltopdf-slf4j</artifactId>-->
+<!--            <version>1.0.10</version>-->
+<!--        </dependency>-->
+
+        <!-- HTML -> DOCX（保留样式） -->
+        <dependency>
+            <groupId>org.docx4j</groupId>
+            <artifactId>docx4j-JAXB-ReferenceImpl</artifactId>
+            <version>8.3.8</version>
+        </dependency>
+        <dependency>
+            <groupId>org.docx4j</groupId>
+            <artifactId>docx4j-ImportXHTML</artifactId>
+            <version>6.0.1</version>
+        </dependency>
+
+
+
+        <!-- docx4j 依赖 -->
+        <dependency>
+            <groupId>org.docx4j</groupId>
+            <artifactId>docx4j</artifactId>
+            <version>6.0.1</version> <!-- 根据你用的版本调整 -->
+        </dependency>
+
+        <!-- JAXB API -->
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.3.1</version>
+        </dependency>
+
+        <!-- JAXB 实现 -->
+        <dependency>
+            <groupId>org.glassfish.jaxb</groupId>
+            <artifactId>jaxb-runtime</artifactId>
+            <version>2.3.1</version>
+        </dependency>
+
+
+        <!-- RPA 用于 FTP 操作 -->
+        <dependency>
+            <groupId>commons-net</groupId>
+            <artifactId>commons-net</artifactId>
+            <version>3.9.0</version>
+        </dependency>
+
+
     </dependencies>
 
     <build>

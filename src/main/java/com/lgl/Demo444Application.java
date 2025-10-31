@@ -9,7 +9,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.redis.core.RedisTemplate;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.rpa")
 @MapperScan("com.lgl.mapper")
 public class Demo444Application {
 
